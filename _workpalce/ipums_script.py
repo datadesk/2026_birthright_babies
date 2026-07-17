@@ -11,8 +11,8 @@ def main():
     csv_path = output_dir / "usa_00002.csv"
     result_path = output_dir / "children_noncitizen_parents.csv"
 
-    xml_file = Path("data") / "raw" / "usa_00001.xml"
-    dat_file = Path("data") / "raw" / "usa_00001.dat.gz"
+    xml_file = Path("data")  / "usa_00001.xml"
+    dat_file = Path("data") / "usa_00001.dat.gz"
 
     ddi = readers.read_ipums_ddi(str(xml_file))
     df = readers.read_microdata(ddi, str(dat_file))
