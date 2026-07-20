@@ -4,8 +4,10 @@ __pycache__/
 .venv/
 venv/
 env/
-# data/
-output/
+data/
 *.dat.gz
 *.xml
+output/
 final_d14_results.csv
+
+data/usa_00001.dat.gz
